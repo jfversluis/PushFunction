@@ -42,7 +42,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
          NotificationHubClient.CreateClientFromConnectionString(
               #error insert your Azure Notification Hub namespace and access key with write permissions
              "Endpoint=sb://<your namespace>.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=<your access key>",
-             "HaviConnectHub");
+             "YourHubName");
 
     if (!string.IsNullOrWhiteSpace(targetLanguage))
         # error insert your translation API key https://azure.microsoft.com/nl-nl/services/cognitive-services/translator-text-api/
